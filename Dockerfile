@@ -5,4 +5,5 @@ RUN apk add --no-cache openvpn
 VOLUME /hackthebox
 WORKDIR /hackthebox
 
-CMD ["openvpn", "--config", "/hackthebox/vpn-config.ovpn"]
+CMD ["openvpn", "--config", "/hackthebox/vpn-config.ovpn", \
+     "--user", "openvpn", "--group", "openvpn"]
