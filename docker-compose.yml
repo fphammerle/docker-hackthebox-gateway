@@ -1,14 +1,14 @@
 version: '2.1'
 
 volumes:
-  hackthebox:
+  vpn_config:
 
 services:
   playground:
     build: .
     image: fphammerle/hackthebox-playground
     volumes:
-    - hackthebox:/hackthebox
+    - vpn_config:/vpn-config:ro
     devices:
     - /dev/net/tun
     cap_add:
