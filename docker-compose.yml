@@ -1,14 +1,5 @@
 version: '2.1'
 
-networks:
-  default:
-    driver: bridge
-    enable_ipv6: true
-    ipam:
-      driver: default
-      config:
-      - subnet: 2001:3984:3989::/64
-
 volumes:
   hackthebox:
 
