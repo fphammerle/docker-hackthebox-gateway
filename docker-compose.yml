@@ -4,9 +4,9 @@ volumes:
   vpn_config:
 
 services:
-  playground:
+  gateway:
     build: .
-    image: fphammerle/hackthebox-playground
+    image: fphammerle/hackthebox-gateway
     volumes:
     - vpn_config:/vpn-config:ro
     devices:
