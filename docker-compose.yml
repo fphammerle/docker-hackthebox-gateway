@@ -7,6 +7,7 @@ services:
   gateway:
     build: .
     image: fphammerle/hackthebox-gateway
+    container_name: hackthebox_gateway
     volumes:
     - vpn_config:/vpn-config:ro
     devices:
