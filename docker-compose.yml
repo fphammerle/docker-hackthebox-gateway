@@ -8,6 +8,8 @@ services:
     build: .
     image: fphammerle/hackthebox-gateway
     container_name: hackthebox_gateway
+    #environment:
+    #  OPENVPN_CONFIG_PATH: /vpn-config/config.ovpn
     volumes:
     - vpn_config:/vpn-config:ro
     devices:
