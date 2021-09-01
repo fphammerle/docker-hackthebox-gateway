@@ -1,6 +1,6 @@
-FROM alpine:3.12
+FROM alpine:3.14.1
 
-ARG OPENVPN_PACKAGE_VERSION=2.4.9-r0
+ARG OPENVPN_PACKAGE_VERSION=2.5.2-r0
 RUN apk add --no-cache openvpn=$OPENVPN_PACKAGE_VERSION
 
 VOLUME /vpn-config
