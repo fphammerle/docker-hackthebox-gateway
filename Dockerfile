@@ -1,4 +1,4 @@
-FROM alpine:3.14.1
+FROM alpine:3.14.2
 
 ARG OPENVPN_PACKAGE_VERSION=2.5.2-r0
 RUN apk add --no-cache openvpn=$OPENVPN_PACKAGE_VERSION
