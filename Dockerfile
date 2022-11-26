@@ -1,6 +1,6 @@
 FROM docker.io/alpine:3.17.0
 
-ARG OPENVPN_PACKAGE_VERSION=2.5.6-r1
+ARG OPENVPN_PACKAGE_VERSION=2.5.8-r0
 RUN apk add --no-cache openvpn=$OPENVPN_PACKAGE_VERSION
 
 VOLUME /vpn-config
