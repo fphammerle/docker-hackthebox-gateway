@@ -1,4 +1,4 @@
-FROM docker.io/alpine:3.18.2
+FROM docker.io/alpine:3.18.3
 
 # https://github.com/OpenVPN/openvpn/blob/master/Changes.rst
 # https://git.alpinelinux.org/aports/log/main/openvpn?h=3.18-stable
